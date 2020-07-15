@@ -1,5 +1,5 @@
 ### Sugestões de padronização
-- Sempre adicionar a chamada do pacote ao inicio da classe.
+- Sempre adicionar a chamada do pacote ao inicio da classe.  \
  ERRADO: 
  ```
  \Log::error('')
