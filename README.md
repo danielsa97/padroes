@@ -22,7 +22,7 @@
 - Nome de diretórios(views, services) no singular, padronizar tambem a forma de escrita:
  ex: local-atendimento, LocalAtendimento, local_atendimento
 
-- Se for trabalhar com parametrização, seguir padrão em captura de valores em switchers, bem como padronizar o que sera usado na hora de capturar o resultado selecionado pelo sistema(se vai ser a chave ou a descrição do parametro)
+- Se for trabalhar com parametrização, seguir padrão em captura de valores em switchers, bem como padronizar o que sera usado na hora de capturar o resultado selecionado pelo sistema(se vai ser a chave ou a descrição do parametro) \
 	ex: {1:'Sim',2:'Não'}
 
 - Inserir try catch em todos os metodos em services e usar throw new Exception para mensagens de erro
@@ -51,6 +51,7 @@
         ```
     CORRETO:
     ```
-        return response()->json(['message' => 'Sucesso'], 200);
-        ```
+    return response()->json(['message' => 'Sucesso'], 200);
+    ```
+
 
