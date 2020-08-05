@@ -17,7 +17,6 @@
 	}
 	
 ```
-- Adicionar suporte v-model em componentes afim de padronizar entrada de dados
 
 - Nome de diretórios(views, services) no singular, padronizar tambem a forma de escrita: \
 ex: local-atendimento, LocalAtendimento, local_atendimento
@@ -53,5 +52,5 @@ ex:
     ```
     return response()->json(['message' => 'Sucesso'], 200);
     ```
-
+- Toda id deve ser tipo UUID
 
