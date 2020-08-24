@@ -1,6 +1,6 @@
 ### Sugestões de padronização
 - Utilizar metodologia GitFlow 
-- Sempre Utilizar SoftDeletes em migratios(exceto tabela pivô).
+- Sempre Utilizar SoftDeletes em migrations(exceto em tabela pivô).
 - Sempre adicionar a chamada do pacote ao inicio da classe. \
  ERRADO: 
  ```
