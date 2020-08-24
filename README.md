@@ -40,20 +40,28 @@ ex:
 
 - Centralizar CSS Global(usado em varios componentes) no diretório do SASS(não inserir diretamente nas views) e usar CSS especifico do componente em ESCOPO.
 - Padronizar como JsonResponse(ou ResponseHttpException em caso de erros) todos os Controllers
-- Utilizar codigos de retorno HTTP para definir status da requisição. \
+- Utilizar codigos de retorno HTTP para definir status da requisição ao inves de usar o atributo "status".
 
 Lista com significado dos codigos HTTP de retorno: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
     ERRADO:
        ```
-       return [
+       return response()->json([
           'status' => true,
-          'message' => 'Sucesso' 
-        ];
+          'message' => 'Usuário criado com sucesso' 
+        ]);
+	
+	return response()->json([
+          'status' => false,
+          'message' => 'Usuário não encontrado' 
+        ]);
         ```
     CORRETO:
     ```
-    return response()->json(['message' => 'Sucesso'], 200);
+    return response()->json(['message' => 'Usuário criado com sucesso'], 201);
+    
+    
+    return response()->json(['message' => 'Usuário não encontrado'], 404);
     ```
 - Toda id deve ser tipo UUID
 
