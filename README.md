@@ -41,7 +41,9 @@ ex:
 - Centralizar CSS Global(usado em varios componentes) no diretório do SASS(não inserir diretamente nas views) e usar CSS especifico do componente em ESCOPO.
 - Padronizar como JsonResponse(ou ResponseHttpException em caso de erros) todos os Controllers
 - Utilizar codigos de retorno HTTP para definir status da requisição. \
-(Lista com significado dos codigos HTTP de retorno)[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status]
+
+Lista com significado dos codigos HTTP de retorno: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
     ERRADO:
        ```
        return [
