@@ -1,4 +1,5 @@
 ### Sugestões de padronização
+- Sempre Utilizar SoftDeletes em migratios(exceto tabela pivô).
 - Sempre adicionar a chamada do pacote ao inicio da classe. \
  ERRADO: 
  ```
