@@ -39,7 +39,7 @@ ex:
 - Centralizar local de scripts 
 
 - Centralizar CSS no diretório do SASS(não inserir diretamente nas views)
-- Padronizar como JsonResponse(ou ResponseHttpException em caso de erros) todos services que retornam dados para view
+- Padronizar como JsonResponse(ou ResponseHttpException em caso de erros) todos os Controllers
 - Utilizar codigos de retorno para definir status da requisição. \
     ERRADO:
        ```
