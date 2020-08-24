@@ -1,4 +1,5 @@
 ### Sugestões de padronização
+- Utilizar metodologia GitFlow 
 - Sempre Utilizar SoftDeletes em migratios(exceto tabela pivô).
 - Sempre adicionar a chamada do pacote ao inicio da classe. \
  ERRADO: 
@@ -20,10 +21,8 @@
 ```
 
 - Nome de diretórios(views, services) no singular, padronizar tambem a forma de escrita: \
-ex: local-atendimento, LocalAtendimento, local_atendimento
+ex: local-atendimento(), LocalAtendimento
 
-- Se for trabalhar com parametrização, seguir padrão em captura de valores em switchers, bem como padronizar o que sera usado na hora de capturar o resultado selecionado pelo sistema(se vai ser a chave ou a descrição do parametro) \
-ex: {1:'Sim',2:'Não'}
 
 - Inserir try catch em todos os metodos em services e usar throw new Exception para mensagens de erro
 
@@ -39,9 +38,10 @@ ex:
 
 - Centralizar local de scripts 
 
-- Centralizar CSS no diretório do SASS(não inserir diretamente nas views)
+- Centralizar CSS Global(usado em varios componentes) no diretório do SASS(não inserir diretamente nas views) e usar CSS especifico do componente em ESCOPO.
 - Padronizar como JsonResponse(ou ResponseHttpException em caso de erros) todos os Controllers
-- Utilizar codigos de retorno para definir status da requisição. \
+- Utilizar codigos de retorno HTTP para definir status da requisição. \
+(Lista com significado dos codigos HTTP de retorno)[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status]
     ERRADO:
        ```
        return [
